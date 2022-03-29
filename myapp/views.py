@@ -81,8 +81,8 @@ def update(request, id):
 
         article = f'''
             <form action="/update/{id}/" method="post">
-                <p><input type="text" name="title" placeholder="title", value={selectedTopic["title"]}></p> 
-                <p><textarea name="body" placeholder="body">{selectedTopic["title"]}</textarea></p>
+                <p><input type="text" name="title" value={selectedTopic["title"]}></p> 
+                <p><textarea name="body">{selectedTopic["body"]}</textarea></p>
                 <p><input type="submit"></p>
             </form>
         '''
